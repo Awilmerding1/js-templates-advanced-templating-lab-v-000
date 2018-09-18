@@ -36,9 +36,9 @@
     
     <script id="recipe-form-partial" type="text/x-handlebars-template">
       <form id="recipe-form-partial" onsubmit="createRecipe()">
-      Recipe Name: <input type="text" id="name" name="name" value="{{name}}"><br>
-      Recipe Description: <input type="text" id="recipeDescription" name="recipeDescription" value="{{description}}"><br>
-      Recipe Ingredients: <br>
+      Recipe Name: <input type="text" id="name" name="name" value="{{name}}"><br><br>
+      Recipe Description: <input type="text" id="recipeDescription" name="recipeDescription" value="{{description}}"><br><br>
+      Recipe Ingredients: <br><br>
         {{#each ingredients}}
         <input type="text" name="ingredients" value="{{this}}"><br>
         {{else}}
