@@ -2,7 +2,7 @@
 function createRecipe() {
   var name = document.getElementById("recipeName").value;
   var description = document.getElementById("recipeDescription").value;
-  var ingredientList = document.getElementByName("ingredients")
+  var ingredientList = document.getElementsByName("ingredients")
   var ingredients = [] 
   
   for(let i=0; i < ingredientList.length; i++) {
