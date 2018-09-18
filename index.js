@@ -28,6 +28,10 @@ function createRecipe() {
       ingredients.push(ingredientList[i].value)
     }
   }
+  let recipe = {name, description, ingredients, submitAction: 'createRecipe()'};
+  let recipeFormTemplate = document.getElementById('recipe-form-template').innerHTML;
+  let template = Handlebars.compile(recipeFormTemplate);
+  document.getElementById("main").innerHTML = template(recipe);
  }
  
  function updateRecipe() {
