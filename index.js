@@ -18,11 +18,7 @@ function createRecipe() {
 }
   
  function displayEditForm() {
-    document.querySelector('a').addEventListener('click', function(e) {
-     var template = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-      var result = template(recipe);
-      document.getElementsByTagName("main")[0].innerHTML += recipe;
-    })
+   
  }
  
  function updateRecipe() {
