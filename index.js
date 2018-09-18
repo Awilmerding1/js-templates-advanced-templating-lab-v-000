@@ -25,7 +25,7 @@ function createRecipe() {
   
   for(let i=0; i < ingredientList.length; i++) {
     if(ingredientList[i] !== "") {
-      ingredients.push(ingredientList[i].value)
+      ingredients.push(ingredientsList[i].value)
     }
   }
   let recipe = {name, description, ingredients, submitAction: 'createRecipe()'};
