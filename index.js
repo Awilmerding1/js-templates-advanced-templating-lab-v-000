@@ -1,6 +1,6 @@
   
 function createRecipe() {
-  var name = document.getElementById("recipeName").value;
+  var name = document.getElementById("name").value;
   var description = document.getElementById("recipeDescription").value;
   var ingredientList = document.getElementsByName("ingredients")
   var ingredients = [] 
