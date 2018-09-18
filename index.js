@@ -37,7 +37,7 @@ function createRecipe() {
  function updateRecipe() {
     var name = document.getElementById("name").value;
   var description = document.getElementById("recipeDescription").value;
-  var ingredientList = document.getElementsByName("ingredients")
+  var ingredientList = document.getElementsByName("ingredientsList")
   var ingredients = [] 
   
   for(let i=0; i < ingredientList.length; i++) {
