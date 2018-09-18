@@ -35,21 +35,7 @@ function createRecipe() {
  }
  
  function updateRecipe() {
-    var name = document.getElementById("name").value;
-  var description = document.getElementById("recipeDescription").value;
-  var ingredientList = document.getElementsByName("ingredientsList")
-  var ingredients = [] 
-  
-  for(let i=0; i < ingredientList.length; i++) {
-    if(ingredientList[i] !== "") {
-      ingredients.push(ingredientList[i].value)
-    }
-  }
-  
-  var recipe = {name, description, ingredients}
-  var recipeTemplate = document.getElementById("recipe-template").innerHTML;
-  var template = Handlebars.compile(recipeTemplate);
-  document.getElementById('main').innerHTML = template(recipe);
+   return createRecipe()
  }
 
 function init() {
