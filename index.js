@@ -19,6 +19,7 @@ function createRecipe() {
   
  function displayEditForm() {
    var name = document.getElementById("name").value
+   var description = document.getElementById("description").value
  }
  
  function updateRecipe() {
