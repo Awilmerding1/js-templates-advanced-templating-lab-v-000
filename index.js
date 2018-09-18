@@ -35,7 +35,7 @@ function createRecipe() {
  }
  
  function updateRecipe() {
-   return createRecipe()
+    createRecipe()
  }
 
 function init() {
