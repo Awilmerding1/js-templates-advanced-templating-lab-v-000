@@ -18,8 +18,8 @@ function createRecipe() {
 }
   
  function displayEditForm() {
-   var name = document.getElementById("recipe-name").value
-   var description = document.getElementById("recipe-description").value
+  var name = document.getElementById("recipe-name").value
+  var description = document.getElementById("recipe-description").value
   var ingredientList = document.getElementsByName('ingredientsList');
   var ingredients = [] 
   
