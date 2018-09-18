@@ -42,7 +42,7 @@ function init() {
 
 // Handlebars Helper displayIngregient
   Handlebars.registerHelper('displayIngredient', function() {
-    return new Handlebars.SafeString('<li name="ingredientsList">   </li>')
+    return new Handlebars.SafeString('<li name="ingredientsList">' + ingredient +  '</li>')
   })
 // Handlebars Register Partial recipeDetailsPartial
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
