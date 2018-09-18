@@ -12,8 +12,8 @@ function createRecipe() {
   }
   
   var recipe = {name, description, ingredients}
-  let recipeTemplate = document.getElementById("recipe-template").innerHTML;
-  let template = Handlebars.compile(recipeTemplate);
+  var recipeTemplate = document.getElementById("recipe-template").innerHTML;
+  var template = Handlebars.compile(recipeTemplate);
   document.getElementById('main').innerHTML = template(recipe);
 }
   
