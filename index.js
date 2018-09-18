@@ -20,6 +20,15 @@ function createRecipe() {
  function displayEditForm() {
    var name = document.getElementById("name").value
    var description = document.getElementById("description").value
+   
+  var ingredientList = document.getElementsByName("ingredients")
+  var ingredients = [] 
+  
+  for(let i=0; i < ingredientList.length; i++) {
+    if(ingredientList[i] !== "") {
+      ingredients.push(ingredientList[i].value)
+    }
+  }
  }
  
  function updateRecipe() {
